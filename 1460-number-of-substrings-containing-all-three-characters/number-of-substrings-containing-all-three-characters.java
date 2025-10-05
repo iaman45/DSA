@@ -8,7 +8,7 @@ class Solution {
         for (int right = 0; right < n; right++) {
             count[s.charAt(right) - 'a']++;
 
-            // shrink window until all three are still included
+        
             while (count[0] > 0 && count[1] > 0 && count[2] > 0) {
                 // all substrings starting at left and ending at >= right are valid
                 result += (n - right);
