@@ -1,7 +1,7 @@
 import java.util.Stack;
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        int result[] = new int[10001];
+        int result[] = new int[10001];//because in the question constraints is given
         Stack<Integer> st = new Stack<>();
         for(int i=nums2.length-1;i>=0;i--)
         {
