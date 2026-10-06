@@ -5,10 +5,6 @@ class Solution {
 
         StringBuilder str = new StringBuilder(s);
 
-        if (str.toString().equals(str.reverse().toString())) {
-            return true;
-        }
-
-        return false;
+        return str.toString().equals(str.reverse().toString());
     }
 }
